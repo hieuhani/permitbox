@@ -1,0 +1,14 @@
+volumes:
+  postgres_data: { }
+
+services:
+  postgres:
+    image: docker.io/bitnami/postgresql:16
+    ports:
+      - "5432:5432"
+    volumes:
+      - 'postgres_data:/bitnami/postgresql'
+    environment:
+      - POSTGRESQL_DATABASE=permitbox
+      - POSTGRESQL_USERNAME=permitbox
+      - POSTGRESQL_PASSWORD=permitbox

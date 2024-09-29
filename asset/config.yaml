@@ -1,0 +1,7 @@
+httpPort: 3008
+db:
+  host: localhost
+  port: 5432
+  user: permitbox
+  password: permitbox
+  database: permitbox
